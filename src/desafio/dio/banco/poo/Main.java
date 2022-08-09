@@ -16,7 +16,7 @@ public class Main {
         andre.setNome("André");
         
         FormatoDeTransferencia forma = new FormatoDeTransferencia();
-        forma.setFormato("PIX");
+        forma.getDEBITO_AUTOMATICO();
         
         Conta contaCo = new ContaCorrente(andre, forma);
         contaCo.depositar(1000);
@@ -27,5 +27,8 @@ public class Main {
         
         contaCo.imprimirExtrato();
         contaPo.imprimirExtrato();
+        
+        
     }
+    
 }
